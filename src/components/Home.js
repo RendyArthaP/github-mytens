@@ -19,8 +19,13 @@ const Home = () => {
   return (
     <div>
       <NavbarMenu />
-      <GithubProfile dataGithubProfile = {dataGithubProfile} />
-      <GithubRepository dataGithubRepository = {dataGithubRepository} />
+      <div className="flex flex-col">
+        <GithubProfile dataGithubProfile = {dataGithubProfile} />
+        <GithubRepository 
+          dataGithubRepository = {dataGithubRepository} 
+          dataGithubProfile = {dataGithubProfile}
+        />
+      </div>
     </div>
   )
 }
