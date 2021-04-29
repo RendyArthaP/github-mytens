@@ -13,8 +13,8 @@ const GithubRepository = ({dataGithubRepository, dataGithubProfile}) => {
   }
 
   return (
-    <div className="wrapper w-full lg:mx-auto lg:max-w-lg">
-      <div className="p-4">
+    <div className="wrapper w-full md:mx-auto md:max-w-lg">
+      <div className="py-4 px-6">
         <div className="flex flex-row border-b border-gray-700 w-32">
           <h1 className="font-bold px-0.5">
             Repository
@@ -33,6 +33,7 @@ const GithubRepository = ({dataGithubRepository, dataGithubProfile}) => {
       <ReactPaginate 
         previousLabel={"Previous"}
         nextLabel={"Next"}
+        pageRangeDisplayed={5}
         pageCount={pageCount}
         onPageChange={changePage}
         containerClassName={"paginationBttns"}

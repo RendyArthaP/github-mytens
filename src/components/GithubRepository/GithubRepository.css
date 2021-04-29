@@ -3,6 +3,8 @@
 }
 
 .paginationBttns {
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-bottom: 4rem;
   width: 100%;
   height: 40px;
@@ -10,6 +12,8 @@
   display:flex;
   flex-direction: row;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .paginationBttns a {
@@ -29,4 +33,13 @@
 .paginationActive a {
   color:white;
   background-color: #000000;
+}
+
+@media only screen and (max-width: 453px) {
+  .previousBttn {
+    display: none;
+  }
+  .nextBttn {
+    display:none;
+  }
 }
