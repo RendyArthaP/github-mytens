@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { getGithubProfile } from '../redux/actions/githubprofile.actions';
 import { getGithubRepository } from '../redux/actions/githubrepository.actions';
 import GithubProfile from './GithubProfile';
-import GithubRepository from './GithubRepository';
+import GithubRepository from './GithubRepository/GithubRepository';
 import NavbarMenu from './NavbarMenu';
 
 const Home = () => {

@@ -10,10 +10,10 @@ const ListRepository = ({repository}) => {
   }
   console.log(repository)
   return (
-    <div className="border border-gray-700 my-4 px-4 py-2 rounded-md">
+    <div className="border border-gray-700 my-4 px-4 py-2 rounded-md w-full mx-auto">
       <div className="flex flex-col md:flex-row md:justify-between">
         <div>
-          <h1 className="font-bold">
+          <h1 className="font-bold text-left">
             {repository.name.charAt(0).toUpperCase() + repository.name.slice(1)}
           </h1>
           <div className="flex flex-row">
