@@ -13,14 +13,12 @@ const GithubRepository = ({dataGithubRepository, dataGithubProfile}) => {
             ({dataGithubProfile.public_repos})
           </span>
         </div>
-        <div>
-          {dataGithubRepository.slice(0, 5).map(repo => (
-            <ListRepository 
-              repository = {repo}
-              key={repo.id} 
-            />
-          ))}
-        </div>
+        {dataGithubRepository.slice(0, 5).map(repo => (
+          <ListRepository 
+            repository = {repo}
+            key={repo.id} 
+          />
+        ))}
       </div>
     </div>
   )
